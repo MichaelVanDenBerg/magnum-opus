@@ -1,0 +1,91 @@
+.single-title {
+	margin-bottom: 0.4em;
+}
+
+.entry-meta {
+	margin-bottom: 1.5em;
+}
+
+.small-avatar img {
+	margin-right: 0.5em;
+	border-radius: 50%;
+	transform: translateY( 5px );
+}
+
+/* Entry header. */
+.entry-header {
+	margin-bottom: 1.5em;
+}
+
+/* Entry content. */
+.entry-content p:first-child {
+	margin-top: 0;
+}
+
+/* Entry footer. */
+.entry-footer {
+	@include font-size(1);
+}
+
+/* Post thumbnail. */
+.post-thumbnail img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	-webkit-backface-visibility: hidden;
+}
+.post-thumbnail,
+.post-thumbnail-link,
+.post-thumbnail-link img {
+	display: block;
+}
+.post-thumbnail {
+	background: $color__background-thumbnail;
+}
+.post-thumbnail-link:hover img {
+	opacity: 0.4;
+}
+.post-thumbnail,
+.page .post-thumbnail,
+.single .post-thumbnail {
+	margin-bottom: 2em;
+}
+
+.page-links {
+	@include font-size(1);
+}
+
+ul {
+	padding-left: 1em;
+}
+
+/* No results. */
+.no-results {
+	padding: 2.5em 0;
+}
+
+/* Styles from Underscores. */
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 2.5em;
+	padding-bottom: 2.5em;
+}
+.updated:not(.published){
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

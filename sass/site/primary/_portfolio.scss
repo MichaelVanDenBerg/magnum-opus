@@ -1,0 +1,158 @@
+#primary.portfolio {
+	padding-top: 0;
+}
+
+#primary.portfolio .entry-content {
+	padding-top: 5rem;
+}
+
+.portfolio-wrapper {
+	display: block;
+	background: $color__background-portfolio-wrapper;
+}
+
+/* Portfolio filter. */
+.filter-toggle {
+	position: absolute;
+	transform: translateY(-100%);
+	z-index: 3;
+	left: 0;
+	color: white;
+	background: rgba(22, 23, 24, 0.8);
+	box-shadow: 0px 0px 2px 2px rgba(22,23,24,0.8);
+}
+.filter-toggle-text {
+	color: currentColor;
+	margin-right: 0.75em;
+}
+.portfolio-filter {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	background: $color__background-portfolio-filter;
+}
+.portfolio-filter ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 1.25em 0 2.5em;
+	max-width: 100%;
+}
+.filter {
+	display: inline;
+	margin: 1.25em 0.75em 0 0;
+	padding: 0.25em 0.4em;
+	list-style: none;
+	cursor: pointer;
+	background: $color__background-filter-default;
+}
+.filter.active {
+	color: $color__text-alt;
+	background: $color__background-filter-active;
+	background-attachment: fixed;
+}
+
+/* Portfolio items. */
+.portfolio-wrapper article {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	margin: 0;
+}
+
+/* Gutter – no gutter. */
+.gutter-sizer {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* Inner link. */
+.portfolio-inner {
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	padding: 10%;
+	position: absolute;
+	text-decoration: none;
+	background: $color__background-overlay;
+
+	&:hover,
+	&:focus,
+	&:active {
+		opacity: 1;
+		background: $color__background-overlay-hover;
+	}
+}
+
+/* Center title & content. */
+.portfolio-wrapper .entry-header {
+	margin-top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+/* Filter toggle effects. */
+.filter-toggled .toggle-lines {
+	background: none;
+}
+.filter-toggled .toggle-lines::before,
+.filter-toggled .toggle-lines::after {
+	transition-delay: 0s, 0.3s;
+}
+.filter-toggled .toggle-lines::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.filter-toggled .toggle-lines::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+.filter-toggle:hover,
+.filter-toggle:focus,
+.filter-toggled:hover,
+.filter-toggled:focus {
+	border-color: white;
+}
+
+/* Portfolio article title. */
+.portfolio-title {
+	transform: translateY(25px);
+}
+.portfolio-inner:hover .portfolio-title {
+	transform: translateY(0);
+}
+
+/* Category tags. */
+.single-jetpack-portfolio .single-header a {
+	margin-right: 1em;
+	padding: 6px 10px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: $color__text-alt;
+	background: $color__text-main;
+
+	&:hover,
+	&:focus {
+		background: $color__link-hover;
+	}
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+	.portfolio-wrapper article {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+}
+
+@media screen and (min-width: $breakpoint-large) {
+	.portfolio-wrapper article {
+		width: 33.3333333333%;
+		padding-bottom: 33.3333333333%;
+	}
+}

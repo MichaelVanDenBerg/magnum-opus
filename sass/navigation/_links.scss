@@ -1,0 +1,43 @@
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.hero-area,
+.sidekick-area,
+.single-header,
+.blog-header,
+.site-footer,
+.post-navigation {
+	a {
+		color: $color__link-alt;
+		
+		&:visited {
+			color: $color__link-alt;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-hover;
+		}
+	}
+}
+
+.site-info a {
+	text-decoration: none;
+}

@@ -1,0 +1,51 @@
+#hidden-header {
+	color: white;
+	background: $color__background-hidden-header;
+}
+
+/* Site branding. */
+.site-branding {
+	display: flex;
+	align-items: center;
+}
+.site-header {
+	background: $color__background-header; 
+}
+.site-header .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.25em 0;
+}
+.site-description {
+	display: none;
+}
+
+/* Custom logo. */
+.custom-logo-link {
+	margin-right: 0.75em;
+
+	img {
+		display: block;
+	}
+}
+
+.hero-area,
+.blog-header,
+.single-header,
+.search-header,
+.archive-header,
+.not-found-header {
+	color: $color__text-alt;
+	background: $color__background-hero;
+}
+
+.hero-area .container,
+.blog-header .container,
+.single-header .container,
+.search-header .container,
+.archive-header .container,
+.not-found-header .container {
+	padding: 3em 0;
+}

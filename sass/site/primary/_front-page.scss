@@ -1,0 +1,244 @@
+.sidekick-area,
+.testimonial-wrapper {
+	background-attachment: fixed;
+}
+
+#primary.front-page {
+	padding-top: 0;
+}
+
+/* Blog & Portfolio urls. */
+.url-container {
+	font-family: $font__headings;
+	background: $color__background-url-cont;
+}
+.blog-url,
+.portfolio-url {
+	display: block;
+	width: 100%;
+	padding: 1.5em 0;
+	font-size: 110%;
+	text-align: center;
+	text-decoration: none;
+	background: transparent;
+
+	.container {
+		color: $color__text-alt;
+	}
+
+	&:hover .container,
+	&:focus .container {
+		color: $color__link-hover;
+	}
+}
+
+/* Overlay. */
+.hero-overlay {
+	background: $color__background-overlay-hero;
+}
+.sidekick-overlay,
+.testimonial-overlay {
+	padding: 3em 0;
+	background: rgba( 255, 255, 255, 0.75 );
+}
+.sidekick-overlay {
+	color: white;
+	background: $color__background-overlay-hero;
+}
+
+/* Featured items. */
+.featured-item {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	margin: 0;
+}
+.featured-inner .featured-title,
+.featured-inner .featured-meta {
+	color: white;
+	text-align: center;
+}
+.featured-inner .container,
+.featured-meta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.featured-inner .container {
+	flex-direction: column;
+	height: 100%;
+}
+
+.featured-meta {
+	display: none;
+	margin-top: 1.5em;
+}
+
+.featured-meta .small-avatar img {
+	max-width: 25px;
+	transform: translateY(0);
+}
+
+/* Hover effects. */
+.featured-header,
+.featured-meta {
+	transform: translateY(25px);
+}
+.featured-inner:hover .featured-header,
+.featured-inner:hover .featured-meta {
+	transform: translateY(0);
+}
+
+/* Featured title. */
+.featured-title {
+	margin: 0 0 0.25em 0;
+	transform: translateY(25px);
+}
+
+/* Inner link. */
+.featured-inner {
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	padding: 10% 0;
+	position: absolute;
+	text-decoration: none;
+	background: $color__background-overlay;
+
+	&:hover,
+	&:focus,
+	&:active {
+		opacity: 1;
+		background: $color__background-overlay-hover;
+	}
+}
+
+/* Testimonials. */
+.testimonial-container .jetpack-testimonial {
+	max-width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+.testimonial-section-title {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+.testimonial-section-description {
+	margin-bottom: 3em;
+}
+.testimonial-container .post-thumbnail {
+	background: transparent;
+
+	img {
+		width: 100%;
+		height: 100%;
+		max-width: 150px;
+		max-height: 150px;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+}
+
+/* Center text. */
+.hero-area,
+.sidekick-area,
+.testimonial-section-title,
+.testimonial-section-description {
+	text-align: center;
+}
+
+/* Blockquotes on the frontpage. */
+.hero-area,
+.sidekick-area,
+.testimonial-section-description {
+	blockquote {
+		max-width: 80%;
+		margin: 15px auto;
+		padding: 20px 10px;
+		border: 0;
+		color: white;
+		font-size: 24px;
+		font-weight: bold;
+		font-style: normal;
+		font-family: $font__headings;
+		background: transparent;
+		line-height: 1.5;
+		text-align: center;
+		text-shadow: 0px 0px 5px $color__text-main;
+		cite {
+			font-style: normal;
+		}
+	}
+	br {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+	.featured-item {
+		padding-bottom: 50%;
+	}
+
+	.featured-title {
+		font-size: 175%;
+	}
+
+	.featured-meta {
+		display: flex;
+	}
+
+	.testimonial-container .jetpack-testimonial {
+		max-width: 60%;
+	}
+
+	.hero-area,
+	.sidekick-area,
+	.testimonial-section-description {
+		blockquote {
+			max-width: 80%;
+			font-size: 28px;
+			margin: 30px auto;
+			padding: 50px 25px;
+			border: 2px solid white;
+			cite {
+				font-style: normal;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-large) {
+	.featured-item {
+		padding-bottom: 33.3333333333%;
+	}
+
+	.featured-title {
+		font-size: 200%;
+	}
+
+	.testimonial-container {
+		display: flex;
+		justify-content: space-between;
+
+		.jetpack-testimonial {
+			max-width: 30%;
+			margin: 0;
+			width: 300px;
+		}
+	}
+
+	.hero-area,
+	.sidekick-area,
+	.testimonial-section-description {
+		blockquote {
+			margin: 40px auto;
+			padding: 80px 40px;
+			cite {
+				font-style: normal;
+			}
+		}
+	}
+}

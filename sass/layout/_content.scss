@@ -1,0 +1,37 @@
+.has-sidebar {
+	.site-content {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+}
+
+#primary,
+#secondary {
+	padding-top: 5rem;
+}
+
+@media screen and (min-width: $breakpoint-large) {
+	.has-sidebar {
+		#content {
+			flex-direction: row;
+		}
+		#primary {
+			padding-right: 7.5%;
+			width: $size__content;
+			max-width:$size__max-content;
+			border-right: 1px solid #909090;
+		}
+		#secondary {
+			padding-left: 7.5%;
+			width: $size__sidebar;
+			max-width: $size__max-sidebar;
+			border-left: 1px solid #909090;
+			transform: translateX( -1px );
+		}
+
+		#primary article:not(:last-child) {
+			border-bottom: 1px solid #909090;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+	font-family: $font__headings;
+}
+
+.site-title {
+	@include font-size(1.5);
+	font-family: $font__headings;
+
+	a,
+	a:visited {
+		color: $color__text-main;
+		text-decoration: none;
+	}
+}
+
+.portfolio-title {
+	color: white;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.entry-title,
+.widget-title {
+	margin: 0.25rem 0;
+}
+
+.entry-title {
+	font-size: 2em;
+	line-height: 1.4;
+
+	a,
+	a:visited {
+		text-decoration: none;
+	}
+}

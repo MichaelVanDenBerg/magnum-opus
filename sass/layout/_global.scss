@@ -1,0 +1,79 @@
+.container,
+.site-info,
+.site-content,
+#footer-widgets,
+.page-template-template-portfolio .type-page  {
+	@include site-width();
+}
+
+.front-page-or-portfolio .site-content {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Overlay. */
+.hero-overlay,
+.header-overlay {
+	width: 100%;
+	height: 100%;
+	background: $color__background-overlay-header;
+}
+
+/* Backgroundsize cover. */
+#masthead,
+.hero-area,
+.sidekick-area,
+.featured-item,
+.blog-header,
+.single-header,
+.testimonial-wrapper,
+.portfolio-wrapper article {
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center!important;
+}
+
+/* Transitions. */
+a,
+.post-navigation span,
+.blog-url .container,
+.portfolio-url .container,
+.search-submit .genericon-search {
+	transition: color 0.25s;
+}
+.more-link,
+.post-navigation a,
+.site-first-letter,
+.site-icon,
+.site-title,
+.menu-toggle,
+.flickity-prev-next-button,
+.single-jetpack-portfolio .single-header a {
+	transition: background 0.25s;
+}
+.featured-header,
+.featured-meta,
+.portfolio-title,
+input.submit,
+.overlay,
+.filter,
+.reply a,
+.tagcloud a,
+.entry-meta a,
+.tags-links a,
+.entry-content a,
+.comment-content a,
+.social-navigation a,
+.author-description a,
+#desktop-navigation .menu-item a::after {
+	transition: all 0.25s;
+}
+.post-thumbnail-link img {
+	transition: opacity 0.25s;
+}
+
+/* Selection. */
+::selection {
+	color: white;
+	background-color: $color__background-selection;
+}
