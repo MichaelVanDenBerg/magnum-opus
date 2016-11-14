@@ -1,5 +1,5 @@
 Magnum Opus
-Theme Version: 0.9.3
+Theme Version: 0.9.4
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -15,7 +15,7 @@ A free portfolio theme powered by Isotope.
 --------------------
 
 Magnum Opus WordPress Theme, Copyright 2016 Michael Van Den Berg.
-Magnum Opus is distributed under the terms of the GNU GPL license 2.0 or later.
+Magnum Opus is distributed under the terms of the GNU GPL license 3.0 or later.
 
 Magnum Opus is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
@@ -114,6 +114,18 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 === Changelog ===
 --------------------
 
+*
+* 0.9.4 / 14.11.2016
+* - Fixed licensing issues in style.css and readme.txt (was GPL-2.0 instead of GPL-3.0).
+* - Removed the sass files from the (WordPress.org) distribution copy.
+* - Removed theme support for html5 search-form (using custom searchform.php).
+* - Search Toggle text (functions.php) and Read/Discover More texts (template-tags.php) are now translatable.
+* - Replaced "get_the_title()" with "the_title_attribute()" in template-tags.php.
+* - Removed jquery-ui.min.js, was already using the bundled file, forgot to remove this.
+* - Internationalized WordPress url in the footer.
+* - Replaced "sanitize_text_field()" with "esc_html()" in part-testimonials.php.
+* - Updated the language pot file.
+* - And some additional CSS style tweaks.
 *
 * 0.9.3 / 13.06.2016
 * - Removed the use of $_SESSION variables in part-hero.php and template-front-page.php.

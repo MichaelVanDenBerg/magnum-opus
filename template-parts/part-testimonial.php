@@ -41,7 +41,7 @@
 							<?php endif; ?>
 
 							<?php if ( ! empty( $testimonials_page['page-content'] ) ) : ?>
-								<div class="testimonial-section-description"><?php echo sanitize_text_field( $testimonials_page['page-content'] ); ?></div>
+								<div class="testimonial-section-description"><?php echo esc_html( $testimonials_page['page-content'] ); ?></div>
 							<?php endif; ?>
 
 							<div class="testimonial-container">

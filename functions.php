@@ -69,7 +69,6 @@ function magnumopus_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
@@ -213,7 +212,7 @@ function magnumopus_scripts() {
 	wp_enqueue_script( 'magnumopus-script', get_template_directory_uri() . '/js/magnumopus.js', array( 'jquery' ), '20160426', true );
 
 	// Load the jQuery effects file.
-	wp_enqueue_script("jquery-effects-core");
+	wp_enqueue_script( 'jquery-effects-core' );
 
 	// Load the skip-link-focus script file.
 	wp_enqueue_script( 'magnumopus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -235,7 +234,7 @@ add_action( 'wp_enqueue_scripts', 'magnumopus_scripts' );
  */
 function magnumopus_add_search_toggle ( $items, $args ) {
 	if ( $args->theme_location == 'primary') {
-		$items .= '<li id="search-toggle" class="menu-item"><a href="#"><span class="screen-reader-text">Search Toggle</span></a></li>';
+		$items .= '<li id="search-toggle" class="menu-item"><a href="#"><span class="screen-reader-text">' . __( 'Search Toggle', 'magnum-opus' ) . '</span></a></li>';
 	}
 	return $items;
 }

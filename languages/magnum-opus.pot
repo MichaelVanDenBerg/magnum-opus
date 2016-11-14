@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Magnum Opus\n"
-"POT-Creation-Date: 2016-06-12 13:11+0200\n"
+"POT-Creation-Date: 2016-11-14 18:37+0100\n"
 "PO-Revision-Date: 2016-06-12 13:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -63,6 +63,10 @@ msgstr ""
 msgid "Powered by "
 msgstr ""
 
+#: footer.php:27
+msgid "http://wordpress.org/"
+msgstr ""
+
 #: footer.php:29
 #, php-format
 msgid "Theme: %1$s by %2$s."
@@ -76,30 +80,34 @@ msgstr ""
 msgid "Social Links"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:138
 msgid "Footer Widget Area"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:140
 msgid "Add widgets to the widget area in the footer."
 msgstr ""
 
-#: functions.php:141
+#: functions.php:147
 msgid "Sidebar Widget Area"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:149
 msgid "This widget area will be displayed in the sidebar."
 msgstr ""
 
-#: functions.php:169
+#: functions.php:175
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:183
 msgctxt "Roboto Slab font: on or off"
 msgid "on"
+msgstr ""
+
+#: functions.php:237
+msgid "Search Toggle"
 msgstr ""
 
 #: header.php:25
@@ -149,7 +157,7 @@ msgstr ""
 msgid "Number of featured items: "
 msgstr ""
 
-#: inc/customizer.php:79
+#: inc/customizer.php:79 inc/template-tags.php:397
 msgid "Read more"
 msgstr ""
 
@@ -228,6 +236,10 @@ msgstr ""
 #: inc/template-tags.php:155
 #, php-format
 msgid " in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:435
+msgid "Discover more"
 msgstr ""
 
 #: searchform.php:13
@@ -322,12 +334,12 @@ msgid ""
 "a post. And give it a \"featured\" tag.</a>"
 msgstr ""
 
-#: template-parts/part-hero.php:132
+#: template-parts/part-hero.php:129
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/part-hero.php:142
+#: template-parts/part-hero.php:139
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 

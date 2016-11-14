@@ -1,0 +1,33 @@
+{
+  "name": "magnum-opus",
+  "version": "0.9.4",
+  "description": "A simple portfolio theme powered by Isotope for WordPress.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelVanDenBerg/magnum-opus.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Free",
+    "Portfolio",
+    "Blog",
+    "Weblog"
+  ],
+  "author": "Michael Van Den Berg",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MichaelVanDenBerg/magnum-opus/issues"
+  },
+  "homepage": "https://github.com/MichaelVanDenBerg/magnum-opus#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

@@ -278,7 +278,7 @@ function magnumopus_post_thumbnail() {
 
 	<div class="post-thumbnail">
 		<a class="post-thumbnail-link" href="<?php echo esc_url( magnumopus_get_link_url() ); ?>" aria-hidden="true">
-			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) ); ?>
+			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
 		</a>
 	</div><!-- .post-thumbnail -->
 
@@ -286,7 +286,7 @@ function magnumopus_post_thumbnail() {
 
 	<div class="post-thumbnail">
 		<a class="post-thumbnail-link" href="<?php echo esc_url( the_permalink() ); ?>" aria-hidden="true">
-			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) ); ?>
+			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
 			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 		</a>
 	</div><!-- .post-thumbnail -->
@@ -307,7 +307,7 @@ function magnumopus_post_thumbnail() {
 
 	<div class="post-thumbnail">
 		<a class="post-thumbnail-link" href="<?php esc_url( the_permalink() ); ?>" aria-hidden="true">
-			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) ); ?>
+			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
 		</a>
 	</div><!-- .post-thumbnail -->
 
@@ -394,7 +394,7 @@ if ( ! function_exists( 'magnumopus_blog_url' ) ) :
  */
 function magnumopus_blog_url() {
 	// Get the read more text.
-	$read_more = get_theme_mod( 'magnumopus_featured_read_more', 'Read more' );
+	$read_more = get_theme_mod( 'magnumopus_featured_read_more', __('Read more', 'magnum-opus' ) );
 
 	echo '<div class="url-container"><a class="blog-url" href="' . esc_url( get_permalink( get_option( 'page_for_posts' ) ) ) . '"><div class="container">' . esc_html( $read_more ) . '</div></a></div>';
 }
@@ -432,7 +432,7 @@ function magnumopus_portfolio_url() {
 	$portfolio_url = get_page_link( $portfolio_id );
 
 	// Get the read more text.
-	$read_more = get_theme_mod( 'magnumopus_portfolio_read_more', 'Discover more' );
+	$read_more = get_theme_mod( 'magnumopus_portfolio_read_more', __('Discover more', 'magnum-opus' ) );
 
 	echo '<div class="url-container"><a class="portfolio-url" href="' . esc_url( $portfolio_url ) . '"><div class="container">' . esc_html( $read_more ) . '</div></a></div>';
 }
