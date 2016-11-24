@@ -113,10 +113,14 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 --------------------
 
 *
-* 1.0.0 / 24.11.2016
+* 1.0.1 / 24.11.2016
 * - Landmark role added for social media menu.
 * - Focus state added for search submit button.
 * - Fixed accessibility issues with red links on black background.
+*
+* 1.0.0 / 15.11.2016
+* - Changed version number after getting error uploading to the repository.
+* - Jaime Lannister sends his regards.
 *
 * 0.9.4 / 14.11.2016
 * - Fixed licensing issues in style.css and readme.txt (was GPL-2.0 instead of GPL-3.0).
