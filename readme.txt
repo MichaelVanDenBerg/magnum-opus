@@ -1,5 +1,5 @@
 Magnum Opus
-Theme Version: 0.9.4
+Theme Version: 1.0.0
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -7,7 +7,7 @@ Author URL: http://michaelvandenberg.com/
 === Description ===
 --------------------
 
-A free portfolio theme powered by Isotope.
+A free portfolio theme powered by Isotope. Designed to be used with Jetpack's Featured Posts and Portfolio Posts items.
 
 
 --------------------
@@ -104,16 +104,19 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 === ToDo ===
 --------------------
 
-1. The red hyperlinks on a black background are not accessibility-ready.
-2. Might be better to hide the Isotope filters from screenreaders.
-3. Not entirely happy with post meta and featured meta. Might need some tweaks.
-4. Maybe empty defaults (instead of "No Projects") will be better on the front page.
+1. Might be better to hide the Isotope filters from screenreaders.
+2. Maybe empty defaults (instead of "No Projects") will be better on the front page.
 
 
 --------------------
 === Changelog ===
 --------------------
 
+*
+* 1.0.0 / 24.11.2016
+* - Landmark role added for social media menu.
+* - Focus state added for search submit button.
+* - Fixed accessibility issues with red links on black background.
 *
 * 0.9.4 / 14.11.2016
 * - Fixed licensing issues in style.css and readme.txt (was GPL-2.0 instead of GPL-3.0).

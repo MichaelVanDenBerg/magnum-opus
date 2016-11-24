@@ -7,53 +7,68 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+}
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-weight: normal;
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto Slab", serif;
+}
 
 .site-title {
   font-size: 24px;
   font-size: 1.5rem;
-  font-family: "Roboto Slab", serif; }
-  .site-title a,
-  .site-title a:visited {
-    color: #202020;
-    text-decoration: none; }
+  font-family: "Roboto Slab", serif;
+}
+
+.site-title a,
+.site-title a:visited {
+  color: #202020;
+  text-decoration: none;
+}
 
 .portfolio-title {
   color: white;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
 .entry-title,
 .widget-title {
-  margin: 0.25rem 0; }
+  margin: 0.25rem 0;
+}
 
 .entry-title {
   font-size: 2em;
-  line-height: 1.4; }
-  .entry-title a,
-  .entry-title a:visited {
-    text-decoration: none; }
+  line-height: 1.4;
+}
+
+.entry-title a,
+.entry-title a:visited {
+  text-decoration: none;
+}
 
 body {
   font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+}
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
 dfn, cite, em, i {
-  font-style: italic; }
+  font-style: italic;
+}
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5em;
+}
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5em;
+}
 
 pre {
   background: #eee;
@@ -64,36 +79,44 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em; }
+  padding: 1.6em;
+}
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
-  font-size: 0.9375rem; }
+  font-size: 0.9375rem;
+}
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
-  cursor: help; }
+  cursor: help;
+}
 
 mark, ins {
   background: #fff9c0;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 big {
-  font-size: 125%; }
+  font-size: 125%;
+}
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+}
 
 blockquote {
   quotes: "" "";
@@ -103,51 +126,66 @@ blockquote {
   background: #f1f1f1;
   border-left: 4px solid #202020;
   border-radius: 0 4px 4px 0;
-  font-style: italic; }
-  blockquote:before, blockquote:after {
-    content: ""; }
-  blockquote p:last-child {
-    margin-bottom: 0; }
-  blockquote cite {
-    display: block;
-    margin-top: 6px;
-    text-align: right;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-style: italic;
-    font-weight: bold; }
+  font-style: italic;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 6px;
+  text-align: right;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
 
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 3em;
+}
 
 ul {
-  list-style: disc; }
+  list-style: disc;
+}
 
 ol {
-  list-style: decimal; }
+  list-style: decimal;
+}
 
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 1.5em;
+}
 
 dt {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 1.5em 1.5em;
+}
 
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+}
 
 table {
   margin: 0 0 1.5em;
@@ -155,27 +193,32 @@ table {
   max-width: 100%;
   border: 2px solid currentcolor;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 thead tr {
   color: white;
-  background: #202020; }
+  background: #202020;
+}
 
 thead tr th,
 tbody tr th,
 tbody tr td,
 tfoot tr th,
 tfoot tr td {
-  border: 2px solid #202020; }
+  border: 2px solid #202020;
+}
 
 thead tr th {
-  padding: 0.25rem; }
+  padding: 0.25rem;
+}
 
 tbody tr th,
 tbody tr td,
 tfoot tr th,
 tfoot tr td {
-  padding: 0.125rem 0.25rem; }
+  padding: 0.125rem 0.25rem;
+}
 
 /* Fix border for the dark footer. */
 .widget thead tr th,
@@ -183,7 +226,8 @@ tfoot tr td {
 .widget tbody tr td,
 .widget tfoot tr th,
 .widget tfoot tr td {
-  border-color: currentcolor; }
+  border-color: currentcolor;
+}
 
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
@@ -191,45 +235,56 @@ tfoot tr td {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /* Remove whitespace beneath image. */
 img {
-  vertical-align: text-bottom; }
+  vertical-align: text-bottom;
+}
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
   margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
 
 .wp-caption-text {
-  text-align: center; }
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
 .gallery-caption {
-  display: block; }
+  display: block;
+}
 
 .gallery-item {
   float: left;
   margin: 0 4px 4px 0;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+}
 
 .gallery-columns-1.gallery-size-medium,
 .gallery-columns-1.gallery-size-thumbnail,
@@ -242,7 +297,8 @@ img {
 .gallery-columns-8.gallery-size-thumbnail,
 .gallery-columns-9.gallery-size-thumbnail {
   display: table;
-  margin: 0 auto 1.5em; }
+  margin: 0 auto 1.5em;
+}
 
 .gallery-columns-1 .gallery-item,
 .gallery-columns-2 .gallery-item,
@@ -253,42 +309,43 @@ img {
 .gallery-columns-7 .gallery-item,
 .gallery-columns-8 .gallery-item,
 .gallery-columns-9 .gallery-item {
-  text-align: center; }
+  text-align: center;
+}
 
 .gallery-columns-3 .gallery-item {
   max-width: 31%;
-  max-width: -webkit-calc(33% - 4px);
-  max-width: calc(33% - 4px); }
+  max-width: calc(33% - 4px);
+}
 
 .gallery-columns-4 .gallery-item {
   max-width: 23%;
-  max-width: -webkit-calc(25% - 4px);
-  max-width: calc(25% - 4px); }
+  max-width: calc(25% - 4px);
+}
 
 .gallery-columns-5 .gallery-item {
   max-width: 19%;
-  max-width: -webkit-calc(20% - 4px);
-  max-width: calc(20% - 4px); }
+  max-width: calc(20% - 4px);
+}
 
 .gallery-columns-6 .gallery-item {
   max-width: 15%;
-  max-width: -webkit-calc(16.7% - 4px);
-  max-width: calc(16.7% - 4px); }
+  max-width: calc(16.7% - 4px);
+}
 
 .gallery-columns-7 .gallery-item {
   max-width: 13%;
-  max-width: -webkit-calc(14.28% - 4px);
-  max-width: calc(14.28% - 4px); }
+  max-width: calc(14.28% - 4px);
+}
 
 .gallery-columns-8 .gallery-item {
   max-width: 11%;
-  max-width: -webkit-calc(12.5% - 4px);
-  max-width: calc(12.5% - 4px); }
+  max-width: calc(12.5% - 4px);
+}
 
 .gallery-columns-9 .gallery-item {
   max-width: 9%;
-  max-width: -webkit-calc(11.1% - 4px);
-  max-width: calc(11.1% - 4px); }
+  max-width: calc(11.1% - 4px);
+}
 
 .gallery-columns-1 .gallery-item:nth-of-type(1n),
 .gallery-columns-2 .gallery-item:nth-of-type(2n),
@@ -299,13 +356,15 @@ img {
 .gallery-columns-7 .gallery-item:nth-of-type(7n),
 .gallery-columns-8 .gallery-item:nth-of-type(8n),
 .gallery-columns-9 .gallery-item:nth-of-type(9n) {
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1),
 .gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),
 .gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),
 .gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
-  clear: left; }
+  clear: left;
+}
 
 .gallery-caption {
   background-color: rgba(0, 0, 0, 0.7);
@@ -325,7 +384,8 @@ img {
   transition: opacity 400ms ease;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .gallery-caption:before {
   box-shadow: 0 -10px 15px #000 inset;
@@ -335,12 +395,15 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .gallery-item:hover .gallery-caption {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .gallery-columns-7 .gallery-caption,
 .gallery-columns-8 .gallery-caption,
 .gallery-columns-9 .gallery-caption {
-  display: none; }
+  display: none;
+}

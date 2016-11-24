@@ -37,6 +37,6 @@
 	&:hover,
 	&:active,
 	&:focus {
-		color: $color__link-hover;
+		border-color: $color__link-hover;
 	}
 }

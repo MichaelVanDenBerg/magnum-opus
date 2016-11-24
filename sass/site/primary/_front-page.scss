@@ -20,15 +20,16 @@
 	font-size: 110%;
 	text-align: center;
 	text-decoration: none;
-	background: transparent;
+	background: $color__background-url-cont;
+	background-clip: border-box;
 
 	.container {
 		color: $color__text-alt;
 	}
 
-	&:hover .container,
-	&:focus .container {
-		color: $color__link-hover;
+	&:hover,
+	&:focus {
+		background: $color__link-hover;
 	}
 }
 

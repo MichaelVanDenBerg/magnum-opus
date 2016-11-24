@@ -45,6 +45,9 @@
 	a:focus .post-title {
 		color: $color__link-hover;
 	}
+	a::after {
+		display: none !important;
+	}
 }
 
 /* Posts navigation. */

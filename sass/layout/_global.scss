@@ -47,10 +47,13 @@ a,
 .site-icon,
 .site-title,
 .menu-toggle,
+.blog-url,
+.portfolio-url,
 .flickity-prev-next-button,
 .single-jetpack-portfolio .single-header a {
 	transition: background 0.25s;
 }
+a::after,
 .featured-header,
 .featured-meta,
 .portfolio-title,

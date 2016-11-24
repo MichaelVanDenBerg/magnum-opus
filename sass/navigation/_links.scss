@@ -22,8 +22,42 @@ a {
 .sidekick-area,
 .single-header,
 .blog-header,
-.site-footer,
 .post-navigation {
+	a {
+		color: $color__link-alt;
+		text-decoration: none;
+		display: inline-block;
+		
+		&:visited {
+			color: $color__link-alt;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			//text-decoration: none;
+			color: $color__link-alt;
+			//box-shadow: inset 0 -0.125em $color__link-hover;
+		}
+		&::after {
+			content: " ";
+			display: table;
+			position: relative;
+			top: -0.125em;
+			width: 100%;
+			height: 2px;
+			opacity: 1;
+			background: $color__link-alt;
+		}
+		&:hover::after,
+		&:focus::after {
+			top: 0.125em;
+			opacity: 1;
+			background: $color__link-hover;
+		}
+	}
+}
+
+.site-footer {
 	a {
 		color: $color__link-alt;
 		
@@ -33,7 +67,9 @@ a {
 		&:hover,
 		&:focus,
 		&:active {
-			color: $color__link-hover;
+			text-decoration: none;
+			color: $color__link-alt;
+			box-shadow: inset 0 -0.125em $color__link-hover;
 		}
 	}
 }
