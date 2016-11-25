@@ -24,9 +24,9 @@ $custom_copyright = get_theme_mod( 'magnumopus_custom_copyright' );
 				<?php } else { ?>
 					<div class="copyright"><span class="symbol">&copy; </span><?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a><span class="sep"> – </span><span class="description"><?php bloginfo( 'description' ); ?>.</span></div>
 				<?php } ?>
-				<span class="generator"><?php echo esc_html__( 'Powered by ', 'magnum-opus' ); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'magnum-opus' ) ); ?>" rel="generator">WordPress</a></span>
+				<span class="generator"><?php echo esc_html__( 'Powered by ', 'magnum-opus' ); ?><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'magnum-opus' ) ); ?>" rel="generator">WordPress</a></span>
 				<span class="sep"> | </span>
-				<span class="designer"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'magnum-opus' ), '<a href="http://michaelvandenberg.com/portfolio/magnum-opus/" rel="theme">Magnum Opus</a>', 'Michael Van Den Berg' ); ?></span>
+				<span class="designer"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'magnum-opus' ), '<a href="https://michaelvandenberg.com/themes/#magnum-opus" rel="theme">Magnum Opus</a>', 'Michael Van Den Berg' ); ?></span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
@@ -36,7 +36,7 @@ $custom_copyright = get_theme_mod( 'magnumopus_custom_copyright' );
 		</div><!-- .social-right -->
 	<?php } ?>
 
-	<a href="#content" class="back-to-top">Top</a>
+	<a href="#content" class="back-to-top"><?php echo esc_html_x( 'Top', 'Back to top: four letters max.', 'magnum-opus' ); ?></a>
 
 </div><!-- #page -->
 

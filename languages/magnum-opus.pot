@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Magnum Opus\n"
-"POT-Creation-Date: 2016-11-14 18:37+0100\n"
-"PO-Revision-Date: 2016-06-12 13:11+0200\n"
+"POT-Creation-Date: 2016-11-25 19:17+0100\n"
+"PO-Revision-Date: 2016-11-25 19:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -64,12 +64,17 @@ msgid "Powered by "
 msgstr ""
 
 #: footer.php:27
-msgid "http://wordpress.org/"
+msgid "https://wordpress.org/"
 msgstr ""
 
 #: footer.php:29
 #, php-format
 msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:39
+msgctxt "Back to top: four letters max."
+msgid "Top"
 msgstr ""
 
 #: functions.php:63
@@ -385,7 +390,7 @@ msgid "Magnum Opus"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://michaelvandenberg.com/portfolio/magnum-opus/"
+msgid "http://michaelvandenberg.com/themes/#magnum-opus"
 msgstr ""
 
 #. Description of the plugin/theme

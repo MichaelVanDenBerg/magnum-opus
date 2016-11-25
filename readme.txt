@@ -1,7 +1,7 @@
 Magnum Opus
-Theme Version: 1.0.0
+Theme Version: 1.0.2
 Author: Michael Van Den Berg 
-Author URL: http://michaelvandenberg.com/
+Author URL: https://michaelvandenberg.com/
 
 --------------------
 === Description ===
@@ -112,6 +112,11 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 === Changelog ===
 --------------------
 
+*
+* 1.0.2 / 25.11.2016
+* - Made the back-to-top button translatable & updated translation files.
+* - Fixed: "Uncaught TypeError: $container.isotope is not a function".
+* - Changed theme URI to: https://michaelvandenberg.com/themes/#magnum-opus
 *
 * 1.0.1 / 24.11.2016
 * - Landmark role added for social media menu.

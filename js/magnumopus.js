@@ -66,38 +66,42 @@
 	// Initialize Isotope.
 	$( window ).load( function() {
 
-		// Check for right to left support
-		var rtl = $( 'body' ).hasClass( 'rtl' ) ? false : true;
-		
-		// Portfolio filtering
-		var $container = $( '.portfolio-wrapper' );
+		if ( $( 'body' ).hasClass( 'front-page-or-portfolio' ) ) {
 
-		$container.isotope( {
-			filter: '*',
-			itemSelector: '.portfolio-item',
-			layoutMode: 'fitRows',
-			resizable: true,
-			percentPosition: true,
-			isOriginLeft: rtl,
-			transformsEnabled: rtl,
-			fitRows: {
-				gutter: '.gutter-sizer'
-			}
-		} );
+			// Check for right to left support
+			var rtl = $( 'body' ).hasClass( 'rtl' ) ? false : true;
+			
+			// Portfolio filtering
+			var $container = $( '.portfolio-wrapper' );
 
-		// Filter items when filter link is clicked
-		$( '.portfolio-filter li' ).click( function(){
-			var selector = $( this ).attr( 'data-filter' );
-				$container.isotope( { 
-					filter: selector,
-				} );
-			$( '.portfolio-filter li' ).removeClass( 'active' );
-			$( this ).addClass( 'active' );
+			$container.isotope( {
+				filter: '*',
+				itemSelector: '.portfolio-item',
+				layoutMode: 'fitRows',
+				resizable: true,
+				percentPosition: true,
+				isOriginLeft: rtl,
+				transformsEnabled: rtl,
+				fitRows: {
+					gutter: '.gutter-sizer'
+				}
+			} );
 
-		return false;
-		} );
+			// Filter items when filter link is clicked
+			$( '.portfolio-filter li' ).click( function(){
+				var selector = $( this ).attr( 'data-filter' );
+					$container.isotope( { 
+						filter: selector,
+					} );
+				$( '.portfolio-filter li' ).removeClass( 'active' );
+				$( this ).addClass( 'active' );
 
-		window.dispatchEvent(new Event('resize'));
+			return false;
+			} );
+
+			window.dispatchEvent(new Event('resize'));
+
+		} // End If.
 	} );
 
 	// Remove empty <p> tags.
