@@ -1,5 +1,5 @@
 Magnum Opus
-Theme Version: 1.0.2
+Theme Version: 1.0.3
 Author: Michael Van Den Berg 
 Author URL: https://michaelvandenberg.com/
 
@@ -112,6 +112,15 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 === Changelog ===
 --------------------
 
+*
+* 1.0.3 / 27.11.2016
+* - Fixed jagged animation of Menu Toggle caused by new version of Autoprefixer.
+* - For more info on the previous issue see: https://github.com/postcss/autoprefixer/issues/748
+* - Added aria-hidden="true" to span.meta-nav in cases where it wasn't already there.
+* - Made search toggle more intuitif (search field is now next in tab order).
+* - Made menu toggle more intuitif (the first menu item is next in tab order).
+* - Focus state added for first level menu items and for the menu toggle.
+* - Published by and the author name in the bio section are combined into a single line.
 *
 * 1.0.2 / 25.11.2016
 * - Made the back-to-top button translatable & updated translation files.
