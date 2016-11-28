@@ -1,5 +1,5 @@
 Magnum Opus
-Theme Version: 1.0.3
+Theme Version: 1.0.4
 Author: Michael Van Den Berg 
 Author URL: https://michaelvandenberg.com/
 
@@ -112,6 +112,10 @@ on the portfolio page can be adjusted under Settings > Writing (at the bottom).
 === Changelog ===
 --------------------
 
+*
+* 1.0.4 / 28.11.2016
+* - Clicking the back-to-top button now also moves focus to the top (.site-title).
+* - Cleaned up the magnumopus.js file a bit. Replaced all double quotes with single quotes.
 *
 * 1.0.3 / 27.11.2016
 * - Fixed jagged animation of Menu Toggle caused by new version of Autoprefixer.

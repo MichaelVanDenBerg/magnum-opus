@@ -7,7 +7,7 @@
 
 	// Check distance to top and display back-to-top.
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > 800) {
+		if ($( this ).scrollTop() > 800 ) {
 			$( '.back-to-top' ).addClass( 'show-back-to-top' );
 		} else {
 			$( '.back-to-top' ).removeClass( 'show-back-to-top' );
@@ -15,9 +15,13 @@
 	});
 
 	// Click event to scroll to top.
-	$( '.back-to-top, .search-toggle' ).click(function(){
-		$( 'html, body' ).animate({scrollTop : 0},800);
-		return false;
+	$( '.back-to-top' ).click( function() {
+		$( 'html, body' ).animate( { scrollTop : 0 },800 );
+
+		// Move focus to site title.
+		$( this ).on( 'blur', function() {
+			$( '.site-title a' ).focus();
+		});
 	});
 
 	// Open hidden header to reveal mobile menu.
@@ -64,7 +68,7 @@
 	});
 
 	// Make focus menu-toggle more intuitif.
-	$( '.menu-toggle' ).click(function(){
+	$( '.menu-toggle' ).click(function() {
 
 		// Move focus to first menu item.
 		$( '.menu-toggle' ).on( 'blur', function() {
@@ -79,24 +83,24 @@
 	});
 
 	// Make focus search-toggle more intuitif.
-	$( '#search-toggle a' ).click(function(){
+	$( '#search-toggle a' ).click(function() {
 
 		// Add class .toggled on toggle.
-		$( this ).toggleClass( "toggled" );
+		$( this ).toggleClass( 'toggled' );
 
 		// Immediately move focus when opened.
-		if ( $( this ).hasClass( "toggled" ) ) { 
-			$( "#primary-search input" ).focus();
+		if ( $( this ).hasClass( 'toggled' ) ) { 
+			$( '#primary-search input' ).focus();
 		}
 
 		// Move focus to search-input.
-		$( "#search-toggle a" ).on( 'blur', function() {
-			$( "#primary-search input" ).focus();
+		$( '#search-toggle a' ).on( 'blur', function() {
+			$( '#primary-search input' ).focus();
 		});
 
 		// Move focus back to search-toggle.
-		$( "#primary-search .search-submit" ).on( 'blur', function() {
-			$( "#search-toggle a" ).focus();
+		$( '#primary-search .search-submit' ).on( 'blur', function() {
+			$( '#search-toggle a ').focus();
 		});
 	});
 
